@@ -38,6 +38,7 @@ public class Main {
 
         printPartOfWord("kulturelle", 6, 4);
         printPartOfWord("kulturelle", 13, 5);
+        printPartOfWord("københavn", 6, 4);
 
         printPalindrome("den laks skal ned");
 
@@ -117,7 +118,7 @@ public class Main {
             String x = String.valueOf(c);
             x += x;
             if (x.contentEquals("aa") || x.contentEquals("ee") || x.contentEquals("ii") || x.contentEquals("oo") || x.contentEquals("uu") || x.contentEquals("yy") || x.contentEquals("ææ") || x.contentEquals("åå") || x.contentEquals("øø")) {
-
+                return;
             } else if (s.contains(x)) {
                 System.out.println(s);
             }
